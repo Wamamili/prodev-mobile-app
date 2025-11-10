@@ -5,14 +5,14 @@ import { PropertyListingProps } from "@/interfaces";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { styles } from "@/styles/_propertyCardStyle";
 
-const PropertyListingCard: React.FC<PropertyListingProps> = ({
+const PropertyListingCard = ({
   propertyName,
   rate,
   currency,
   amount,
   location,
   favorite,
-}) => {
+}: PropertyListingProps) => {
   return (
     <ImageBackground
       source={require("@/assets/images/sample-image.png")}
